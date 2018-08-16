@@ -76,13 +76,14 @@ namespace Calculator
                 }
             }
 
-            input = result.ToString();
+
         }
 
         private void Divide_Click(object sender, EventArgs e)
         {
             operand = input;
             operation = '/';
+            input = "";
         }
 
         private void Decimal_Click(object sender, EventArgs e)
