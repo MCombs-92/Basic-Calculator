@@ -75,19 +75,21 @@ namespace Calculator
                     Calc.Text = "Cannot divide by zero";
                 }
             }
+
+            input = result.ToString();
         }
 
         private void Divide_Click(object sender, EventArgs e)
         {
             operand = input;
             operation = '/';
-            input = string.Empty;
         }
 
         private void Decimal_Click(object sender, EventArgs e)
         {
             this.Calc.Text = "";
             input += ".";
+            this.Calc.Text += input;
         }
 
         private void One_Click(object sender, EventArgs e)
