@@ -75,7 +75,7 @@ namespace Calculator
                     Calc.Text = "Cannot divide by zero";
                 }
             }
-
+            operand = Calc.Text;
 
         }
 
